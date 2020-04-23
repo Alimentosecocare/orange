@@ -599,7 +599,7 @@ odoo.define('flexiretail_ee_advance.db', function (require) {
             }
             return updated_count;
         },
-        _gift_card_cust_search_string: function(partner){
+        _gift_card_cust_search_string: function(partner){ 
 		    if(partner){
                 var str =  partner.name;
                 if(partner.mobile){
