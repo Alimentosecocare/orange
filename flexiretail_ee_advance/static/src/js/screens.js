@@ -877,7 +877,7 @@ odoo.define('flexiretail_ee_advance.screens', function (require) {
                 domain: [['id', '=', partner_id]],
                 fields: ['name','city','mobile','phone','street','email','country_id',
                         'remaining_wallet_amount',
-                        'property_product_pricelist','vat','zip','credit_limit','barcode','activity_description'],
+                        'property_product_pricelist','vat','zip','credit_limit','barcode'],
             }
             rpc.query(params, {async: false}).then(function(partner){
                 self.render_list(self.pos.db.get_partners_sorted(1000));
