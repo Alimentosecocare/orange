@@ -608,7 +608,6 @@ odoo.define('flexiretail_ee_advance.db', function (require) {
                 if(partner.email){
                     str += '|' + partner.email;
                 }
-                //str = '' + partner.id + ':' + str.replace(':','') + '\n';
                 return str;
             } else{
                 var str = "";
